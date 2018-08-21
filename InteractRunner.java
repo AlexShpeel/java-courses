@@ -1,11 +1,21 @@
 import java.util.Scanner;
 
+/**The programm asks to type
+ * two int numbers
+ * and to choose operation
+ * to do with numbers.
+ */
+
 public class InteractRunner {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         try {
+
+//             creates new Calculator
             Calculator calc = new Calculator();
             String exit = "no";
+
+//             asking of exit
             while (!exit.equals("yes")) {
                 System.out.println("Type first number");
                 String first = sc.next();
@@ -17,6 +27,7 @@ public class InteractRunner {
                         "3: multiplication\n" +
                         "4: division");
                 int choice = Integer.parseInt(sc.next());
+//                choosing operation
                 switch (choice) {
 
                     case 1: {
@@ -40,6 +51,7 @@ public class InteractRunner {
                         break;
                     }
                 }
+//                cleaning the result variable
                 calc.cleanResult();
                 System.out.println("Exit? yes/no...");
                 exit = sc.next();
