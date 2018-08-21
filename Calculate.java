@@ -5,5 +5,6 @@ public class Calculate{
         int second = Integer.valueOf(args[1]);
         int sum = first + second;
         System.out.println("Summ = " + sum);
+        System.out.println("Tra la la");
     }
 }
