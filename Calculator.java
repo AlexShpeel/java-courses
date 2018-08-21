@@ -16,17 +16,17 @@ public class Calculator{
 
 //    subtraction method
     public void sub(int a, int b){
-            this.result = a - b;
+        this.result = a - b;
     }
 
 //    multiplication method
     public void multi(int a, int b){
-        result = a * b;
+        this.result = a * b;
     }
 
 //    division method
     public void div( double a, double b){
-        result = a / b;
+        this.result = a / b;
     }
 
     public double getResult(){
